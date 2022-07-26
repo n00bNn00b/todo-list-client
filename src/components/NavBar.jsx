@@ -30,10 +30,10 @@ const NavBar = () => {
               <Link to="/add">Add Task</Link>
             </li>
             <li tabIndex="0">
-              <a className="justify-between">Task List</a>
+              <Link to="/tasklist">Task List</Link>
             </li>
             <li>
-              <a>Location</a>
+              <Link to="/location">Location</Link>
             </li>
           </ul>
         </div>
@@ -47,10 +47,10 @@ const NavBar = () => {
             <Link to="/add">Add Task</Link>
           </li>
           <li tabIndex="0">
-            <a>Task List</a>
+            <Link to="/tasklist">Task List</Link>
           </li>
           <li>
-            <a>Location</a>
+            <Link to="/location">Location</Link>
           </li>
         </ul>
       </div>

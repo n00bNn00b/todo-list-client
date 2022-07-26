@@ -1,9 +1,19 @@
-import React from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+import TaskListCard from "./TaskListCard";
 
 const TaskList = () => {
+  const [tasks, setTasks] = useState([]);
+
+  useEffect(() => {
+    axios.get("http://localhost:5000/tasks").then((res) => setTasks(res.data));
+  }, []);
+
   return (
-    <div>
-      <h2>Tasklist</h2>
+    <div className="my-20">
+      {tasks.map((task) => (
+        <TaskListCard key={task.id} task={task} />
+      ))}
     </div>
   );
 };
