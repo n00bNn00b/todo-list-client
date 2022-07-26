@@ -6,7 +6,7 @@ const AddTask = () => {
     e.preventDefault();
     const task = e.target.task.value;
     // console.log(task);
-    axios.post("http://localhost:5000/task", {
+    axios.post("https://todo-sigma.herokuapp.com/task", {
       task: task,
     });
     e.target.reset();

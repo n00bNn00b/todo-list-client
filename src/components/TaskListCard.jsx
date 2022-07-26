@@ -16,7 +16,7 @@ const TaskListCard = ({ task }) => {
     }
   };
   const handleDelete = () => {
-    axios.delete(`http://localhost:5000/delete/${id}`);
+    axios.delete(`https://todo-sigma.herokuapp.com/delete/${id}`);
   };
   return (
     <div className="card w-96 bg-base-100 shadow-xl flex mx-auto my-3">

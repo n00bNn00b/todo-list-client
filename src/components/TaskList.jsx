@@ -6,7 +6,9 @@ const TaskList = () => {
   const [tasks, setTasks] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/tasks").then((res) => setTasks(res.data));
+    axios
+      .get("https://todo-sigma.herokuapp.com/tasks")
+      .then((res) => setTasks(res.data));
   }, [tasks]);
 
   return (
