@@ -7,7 +7,7 @@ const TaskList = () => {
 
   useEffect(() => {
     axios.get("http://localhost:5000/tasks").then((res) => setTasks(res.data));
-  }, []);
+  }, [tasks]);
 
   return (
     <div className="my-20">
