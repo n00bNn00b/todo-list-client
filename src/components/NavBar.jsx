@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -26,7 +27,7 @@ const NavBar = () => {
             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-primary rounded-box w-52"
           >
             <li>
-              <a>Add Task</a>
+              <Link to="/add">Add Task</Link>
             </li>
             <li tabIndex="0">
               <a className="justify-between">Task List</a>
@@ -43,7 +44,7 @@ const NavBar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal p-0">
           <li>
-            <a>Home</a>
+            <Link to="/add">Add Task</Link>
           </li>
           <li tabIndex="0">
             <a>Task List</a>
